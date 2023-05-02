@@ -87,7 +87,7 @@ export default function App() {
             return (
               <Tr key={offset}>
                 <Td textAlign="center">{rank}</Td>
-                <Td>{name}</Td>
+                <Td>{name.trim() ? name : (<i>Invalid Name</i>)}</Td>
                 <Td textAlign="center" fontWeight="semibold">
                   {livers}
                 </Td>
